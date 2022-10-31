@@ -1,0 +1,158 @@
+# sequence of prerequisites to running this script
+
+# before even getting to the following checklist, its important that dual booting of ubuntu 20.04 on your system is completed without errors and that you are connected to the internet
+
+# 1 download and save the file under /home/<your username>/
+# 2 navigate to /home/<your username>/
+# 3 execute 'chmod 777 IRACV-IO-setup'
+# 4 execute 'ls' 
+# 5 verify that 'IRACV-IO-setup' appears in green on your terminal
+# 6 execute './IRACV-IO-setup >> IRACV-IO-setup-output.txt'
+# 7 be on the lookout for user prompts during execution
+# 8 mail your IRACV-IO-setup-output.txt as an attachment to sriram.radhakrishna42@gmail.com along with your 
+
+
+# installer initialization
+
+echo
+echo ++++++++++ starting installer for the course requirements of PESU IO Slot 14 Integrated Robotics and Applied Computer Vision ++++++++++
+echo
+
+sudo apt update
+
+
+# ROS installer
+
+echo
+echo ++++++++++ starting ROS installation ++++++++++
+echo
+
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+
+sudo apt install curl
+
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+
+sudo apt update
+
+sudo apt install ros-noetic-desktop-full
+
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+
+sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+
+sudo apt install python3-rosdep
+
+sudo rosdep init
+
+rosdep update
+
+echo
+echo ++++++++++ Terminating the ROS installation ++++++++++
+echo
+
+# catkin workspace initialization
+
+echo
+echo ++++++++++ Setting up your catkin workspace ++++++++++
+echo
+
+source /opt/ros/noetic/setup.bash
+
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/
+catkin_make
+source devel/setup.bash
+echo $ROS_PACKAGE_PATH
+cd ~/catkin_ws/src && git clone https://github.com/SR42-dev/scaling-spoon.git
+cd ~/catkin_ws/src/scaling-spoon
+rm -r .git
+
+cd
+
+echo
+echo ++++++++++ catkin workspace setup complete ++++++++++
+echo
+
+
+# ROS package installations
+
+echo
+echo ++++++++++ IO course ROS package installation starting ++++++++++
+echo
+
+cd ~/catkin_ws/src
+git clone https://github.com/ros-geographic-info/unique_identifier.git
+git clone https://github.com/ros-geographic-info/geographic_info.git
+
+cd ~/catkin_ws && catkin_make
+
+git clone https://github.com/RAFALAMAO/hector_quadrotor_noetic.git
+
+cd ~/catkin_ws && catkin_make
+
+cd
+
+cd ~/catkin_ws/src/
+git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+cd ~/catkin_ws && catkin_make
+
+cd
+
+echo "export TURTLEBOT3_MODEL=waffle" >> ~/.bashrc
+
+echo
+echo ++++++++++ IO course ROS package installation complete ++++++++++
+echo
+
+
+# python installations
+
+echo
+echo ++++++++++ Setting up your python dependencies ++++++++++
+echo
+
+sudo apt install python3-pip
+
+sudo apt install python-is-python3
+
+sudo pip3 install opencv-python
+python3 -c "import cv2"
+
+sudo pip3 install numpy
+python3 -c "import numpy"
+
+sudo pip3 install mediapipe
+python3 -c "import mediapipe"
+
+sudo pip3 install roslibpy
+python3 -c "import rospy"
+
+sudo pip3 install tensorflow
+python3 -c "import tensorflow"
+
+echo
+echo ++++++++++ Done setting up your python dependencies ++++++++++
+echo
+
+# vscode installation
+
+echo
+echo ++++++++++ Installing VSCode ++++++++++
+echo
+
+sudo snap install --classic code
+
+echo
+echo ++++++++++ Done installing VSCode ++++++++++
+echo
+
+# update and reboot
+
+sudo apt update
+
+echo ++++++++++ Terminating the installer for the course requirements of PESU IO Slot 14 Integrated Robotics and Applied Computer Vision ++++++++++
+
+reboot
+
+
