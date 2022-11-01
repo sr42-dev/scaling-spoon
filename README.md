@@ -307,4 +307,4 @@ Good luck :)
 
 ## Potential Final Project Statements :
 
-1. Simulate a quadrotor picking up and placing a carboard box from point to point using any environment and package of your choosing. Successful completion of this statement will most definitely get you into the three sigma bracket mentioned in the grading methodology section.
+1. Simulate a quadrotor picking up and placing a carboard box from point to point using any environment and package of your choosing. Successful completion of this statement will most definitely get you into the three sigma bracket mentioned in the grading methodology section and guarantees a distinction grade.
