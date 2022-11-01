@@ -26,7 +26,7 @@ A master repository containing all the SME issued material for the Integrated Ro
 
 - Don't worry about the exact number of your final score. It's nothing more than a tool to determine which grade bracket you fall into.
 
-![Bell Curve](./resources/graphics/bellCurve.png)
+![Bell Curve](./resources/graphics/bellCurve.jpg)
 
 ## day 1
 
