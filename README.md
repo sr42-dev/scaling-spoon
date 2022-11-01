@@ -303,3 +303,8 @@ Good luck :)
 
 1. Students present their final projects
 2. All projects must be evaluated by the SME
+
+
+## Potential Final Project Statements :
+
+1. Simulate a quadrotor picking up and placing a carboard box from point to point using any environment and package of your choosing. Successful completion of this statement will most definitely get you into the three sigma bracket mentioned in the grading methodology section.
