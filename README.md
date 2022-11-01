@@ -1,6 +1,6 @@
 # scaling-spoon
 
-A master repository containing all the SME issued material for the Integrated Robotics and Applied Computer Vision course of PESU IO Slot 14 (2022).
+A master repository containing all the SME issued material for the Integrated Robotics and Applied Computer Vision course of PESU IO Slot 14 (2022). Images from the best submissions will be featured on this README.md
 
 ![Cover Image](./resources/graphics/courseCover.jpeg)
 
@@ -26,6 +26,7 @@ A master repository containing all the SME issued material for the Integrated Ro
 
 - Don't worry about the exact number of your final score. It's nothing more than a tool to determine which grade bracket you fall into.
 
+![Bell Curve](./resources/graphics/bellCurve.png)
 
 ## day 1
 
@@ -83,6 +84,8 @@ This assignment will take anywhere between 20 to 45 minutes depending on how car
 The ability to read thoroughly and debug system errors is an essential skill in robotics. You will not survive without it. Give every error it's due time for resolution. In case you run into them, post them on the group and hep each other out.
 
 Good luck :)
+
+![Task 1 Archanaa](./resources/graphics/archanaaOP.png)
 
 
 2. For your second task, you'll be required to create a repository on your github account and clone it to your local machine. 
@@ -203,6 +206,7 @@ Good luck :)
 ### Resources :
 
 - ./day5
+- A case study for MobileNet v2 applied to classify fish species : https://github.com/SIH-ClapForKrishna/fish-classifier-tensorflow/blob/main/fish-classifier.ipynb
 - Creating an AWS EC2 instance : https://www.javatpoint.com/aws-ec2-creating-an-instance
 - Connecting to an AWS EC2 instance using SSH : https://www.clickittech.com/aws/connect-ec2-instance-using-ssh/
 - Copying directories to your remote system using scp : https://medium.com/srcecde/copy-file-directory-to-from-ec2-using-scp-secure-copy-685c46636399
