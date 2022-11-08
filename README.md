@@ -150,6 +150,15 @@ Good luck :)
 - ./day3
 - UE20CS302 - Machine Intelligence course (PESU)
 
+$ cd ~/catkin_ws
+cd src
+git clone ‘-’b ros-noetic https://github.com/aniskoubaa/ros_essentials_cpp.git 
+$ catkin_make
+source devel/setup.bash
+new terminal:
+sudo apt install python-is-python3
+To test: python
+
 ### Tasks :
 
 1. Draw any shape in Turtlesim using teleop node. The usage of algorithms to generate complex drawings will be a strong criterion for grading. Record the execution of the same and email the .mp4 file to the SMEs.
