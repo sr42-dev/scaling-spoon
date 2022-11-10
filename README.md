@@ -140,8 +140,8 @@ Good luck :)
 - A conversation on gradient descent
 - A conversation on activation function
 - A conversation on forward propagation & backpropagation
-- ROS services [HANDS ON]
-- Creating custom messages [HANDS ON]
+- ROS services
+- Creating custom messages
 - Introduction to TurtleSim
 
 
@@ -152,16 +152,17 @@ Good luck :)
 
 $ cd ~/catkin_ws
 cd src
-git clone ‘-’b ros-noetic https://github.com/aniskoubaa/ros_essentials_cpp.git 
-$ catkin_make
-source devel/setup.bash
-new terminal:
-sudo apt install python-is-python3
+git clone -b ros-noetic https://github.com/aniskoubaa/ros_essentials_cpp.git 
+$cd ..
+$catkin_make
+$source devel/setup.bash
+new terminal
+$sudo apt install python-is-python3
 To test: python
 
 ### Tasks :
 
-1. Draw any shape in Turtlesim using teleop node. The usage of algorithms to generate complex drawings will be a strong criterion for grading. Record the execution of the same and email the .mp4 file to the SMEs.
+1. Develop a publisher and subscriber to display a message of your choice. Expand the system such that you create at least two publishers and three subscribers and establish topics to pass messages between them.
 
 2. For your second task, you'll be required to complete this kaggle notebook to identify handwritten digits using an ANN by adding visualizations for training & validation loss and error. 
 
@@ -182,22 +183,22 @@ Good luck :)
 
 ### Topics covered :
 
-- Gazebo Setup
-- Using RViz to create visualizations in Gazebo [HANDS ON]
 - TurtleSim control with nodes
 - A brief conversation about convolutions in neural networks (as a break from the robotic systems)
 - Using teleop and nodes for motion control
-- Implementing laser scan and cmd_vel topics for pose estimation and obstacle detection
 
 
 ### Resources :
 
 - ./day4
+ -ros_essentials_cpp package 
+ -cleaner.py
+ -move.py
 
 
 ### Tasks :
 
-1. 
+1. Develop a node to control the turtlesim bot and make it move in a specific shape, such as a rectangle, square, circle etc. The complexity of the design will be proportional to the score obtained for the task.
 
 ## day 5
 
@@ -212,6 +213,7 @@ Good luck :)
 - P, PI, PD and PID controllers
 - PID tuning using turtlesim
 
+
 ### Resources :
 
 - ./day5
@@ -224,10 +226,19 @@ Good luck :)
 
 ```ssh -i file.pem username@ip-address ```
 
+ - https://www.youtube.com/watch?v=5Y2X7HNmk4s - Controlling a spaceship with PID
+ - https://robotics.stackexchange.com/questions/9786/how-do-the-pid-parameters-kp-ki-and-kd-affect-the-heading-of-a-differential - PID Controller concepts
+ - https://github.com/jellevos/simple-ros-pid/blob/master/simple_pid/PID.py - PID implementation
+ -https://modernrobotics.northwestern.edu/nu-gm-book-resource/foundations-of-robot-motion/ An amazing northwestern university explanation
+ -https://www.youtube.com/watch?v=zOByx3Izf5U - An amazing implementation of PID in software by Phil's Lab
 
 ### Tasks :
 
-1. 
+1. Develop a P controller to make the turtlesim move in a straight line to a goal.
+ 
+2. Develop a P controller to make the turtlesim turn.
+ 
+2. Develop a PID controller to do the same.
 
 ## day 6
 
@@ -239,11 +250,11 @@ Good luck :)
  - Mediapipe documentation review
  - Landmarks
  - Hand tracking module [HANDS ON]
- - Pose estimation module [HANDS ON]
  - Using PID to control motion 
  - Deploying a ROS node to control motion in a pre-set manner while integrating PID controllers [HANDS ON]
- - Laser Scan integration for obstacle detection
  - Hector quadrotor understanding
+ -Gazebo Setup
+- Using RViz to create visualizations in Gazebo [HANDS ON]
 
 ### Resources :
 
