@@ -259,13 +259,17 @@ Good luck :)
 ### Resources :
 
 - ./day6
-- 
-
+- https://www.youtube.com/watch?v=qJ9v1fITeVk - The Construct; Hector Quadrotor installation
+ https://github.com/tu-darmstadt-ros-pkg/hector_quadrotor/tree/catkin - Hector Quadrotor package
+ https://github.com/RAFALAMAO/hector-quadrotor-noetic - Package that is to be installed for hector quadrotor
+ 
 ### Tasks :
 
 1.For your first task, write a program to count the number of fingers you hold up against the camera and display the number on the screen. 
 
 2. If you wish, you can expand on the previous task to detect whether or not you're holding up rock, paper or scissors, generate a random equivalent from the computer's side and display the winner on the screen. This will be the criterion for a guaranteed perfect score for this task.
+ 
+3. Writing a node to make the quadrotor move up, down, left, right and rotate
 
 ## day 7
 
