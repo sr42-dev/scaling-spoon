@@ -180,6 +180,7 @@ This task is optional but completion with the previous one will guarantee you a 
 
 Good luck :)
 
+![Task 1 JB](./resources/graphics/JBOP2.png)
 
 ## day 4
 
