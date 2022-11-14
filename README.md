@@ -129,6 +129,8 @@ Submit either of these in the form of a .mp4 file recording the execution and em
 
 Good luck :)
 
+![Task 1 Adithya](./resources/graphics/adithyaOP.png)
+
 
 ## day 3
 
@@ -270,6 +272,8 @@ Good luck :)
 2. If you wish, you can expand on the previous task to detect whether or not you're holding up rock, paper or scissors, generate a random equivalent from the computer's side and display the winner on the screen. This will be the criterion for a guaranteed perfect score for this task.
  
 3. Writing a node to make the quadrotor move up, down, left, right and rotate
+
+![Task 2 Adithya](./resources/graphics/adithyaOP2.png)
 
 ## day 7
 
