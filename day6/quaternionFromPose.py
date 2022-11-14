@@ -1,14 +1,3 @@
-"""
-
-singlePedestrianCollisionPredictionv1.0.py
-
-- This script predicts the path of movement one second ahead of time by classifying the pedestrian obstacle's future coordinates on the frame into 2D co-ordinates.
-- After classification, the script also checks for whether or not the future coordinates fall into the projection of a zone where the robot on which the camera is assumed to be mounted is projected to be an arbitrary time into the future.
-- The prediction is one second ahead of time as this algorithm is intended to classify pedestrian obstacle movement behaviours short spans of time ahead of the present for quick reaction purposes.
-- This script also clearly states when a collision is imminent when the aforementioned conditions are met.
-
-"""
-
 # importing the necessary libraries
 import os
 import cv2
