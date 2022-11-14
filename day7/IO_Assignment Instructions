@@ -1,0 +1,12 @@
+Hey guys, for your ROS assignments, you have the following tasks to do:
+1) Create your own publisher and subscriber files, with at least two publishers and two subscribers, name them broadcaster and receiver, and email them along with a screenshot of your output.
+2) Use the turtlesim_cleaner.py to develop a node that makes the turtlesim move in a specific shap such as a rectangle. The more complex the shape the better. Email the code file as well as the output screenshot.
+3) Finally, develop a go_to_goal function that makes the turtle move from the current position to (2,2,2). You need to use a P controller at minimum, but ideally, use a PID controller for maximum marks. Send the code along with a video of the turtle moving. Refer to turtlesim_cleaner.py for the P controller. The following links will aid you in developing a PID controller:
+https://robotics.stackexchange.com/questions/9786/how-do-the-pid-parameters-kp-ki-and-kd-affect-the-heading-of-a-differential
+https://github.com/jellevos/simple-ros-pid/blob/master/simple_pid/PID.py
+https://modernrobotics.northwestern.edu/nu-gm-book-resource/foundations-of-robot-motion/
+https://github.com/pms67/PID
+https://www.youtube.com/watch?v=zOByx3Izf5U
+https://www.youtube.com/watch?v=qJ9v1fITeVk
+
+
