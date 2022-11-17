@@ -83,7 +83,7 @@ while True:
     #imgGray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     #imgGrayBlur = cv2.GaussianBlur(imgGray, (7,7), 0)
     #imgCanny = cv2.Canny(img, 100, 100)
-    #imgDilation = cv2.dilate(imgCanny, (100,100), iterations=1) # <Canny image variable>, <kernel (matrix)>, iterations = <thickness>
+    #imgDilation = cv2.dilate(imgCanny, (10,10), iterations=1) # <Canny image variable>, <kernel (matrix)>, iterations = <thickness>
 
 
     # erosion
@@ -99,7 +99,7 @@ while True:
 
 
     # cropping
-    imgCropped = img[0:200, 200:500] # height first, then width
+    #imgCropped = img[0:200, 200:500] # height first, then width
 
 
     # drawing shapes
@@ -114,13 +114,13 @@ while True:
 
 
     # resizing
-    imgResize = cv2.resize(img, (300,200)) # <image variable>, <dimensions (width, height)>
+    #imgResize = cv2.resize(img, (300,200)) # <image variable>, <dimensions (width, height)>
 
 
     # result display (replace 'None with your image variable')
-    imgResult = imgResize  # adds two images and creates a new one where non black colours on the mask are given colour from the original
-    imgStacked = stackImages(0.5, ([img, imgResult])) # stacking images
-    cv2.imshow('Test window', imgResize) # showing image
+    #imgResult = mask  # adds two images and creates a new one where non black colours on the mask are given colour from the original
+    #imgStacked = stackImages(0.5, ([img, imgResult])) # stacking images
+    #cv2.imshow('Test window', img) # showing image
     cv2.imshow('Test window', img)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):

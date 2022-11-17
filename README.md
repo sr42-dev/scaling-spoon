@@ -166,6 +166,8 @@ To test: python
 
 1. Develop a publisher and subscriber to display a message of your choice. Expand the system such that you create at least two publishers and three subscribers and establish topics to pass messages between them.
 
+![Task 1 Varchasvin](./resources/graphics/varchasvinOP.png)
+
 2. For your second task, you'll be required to complete this kaggle notebook to identify handwritten digits using an ANN by adding visualizations for training & validation loss and error. 
 
 https://www.kaggle.com/code/rupeshs/mnist-baseline-without-cnn/notebook
